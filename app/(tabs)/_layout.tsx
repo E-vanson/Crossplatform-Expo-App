@@ -46,13 +46,6 @@ export default function TabsLayout() {
           ),
         }}
       />
-
-      <Tabs.Screen
-        name="not-found"
-        options={{
-          headerShown: false,
-        }}
-      />
     </Tabs>
   );
 }

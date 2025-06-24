@@ -51,3 +51,7 @@ Join our community of developers creating universal apps.
 
 ## Download Package To Allow As To Load Images On Web, IOS & Android
 npx expo install expo-image
+
+
+## Expo Image Picker
+npx expo install expo-image-picker
