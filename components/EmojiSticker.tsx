@@ -1,8 +1,8 @@
 import { ImageSourcePropType } from "react-native";
-import { Gesture, GestureDetector } from "react-native-gesture-handler";
-import Animated, {
+import { Gesture, GestureDetector } from "react-native-gesture-handler"; //allow us to detect touch input eg: double tap
+import Animated, { // Allows us to animate components eg Views, text, scroll
   useAnimatedStyle,
-  useSharedValue,
+  useSharedValue, //similar to useState but doesn't trigger a rerender when the values change
   withSpring,
 } from "react-native-reanimated";
 
@@ -33,7 +33,7 @@ export default function EmojiSticker({ imageSize, stickerSource }: Props) {
     };
   });
 
-  const drag = Gesture.Pan().onChange((event) => {
+  const drag = Gesture.Pan().onChange((event) => {// will detect when user drags the image and change the position
     translateX.value += event.changeX;
     translateY.value += event.changeY;
   });
